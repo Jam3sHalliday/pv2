@@ -1,0 +1,74 @@
+.intro .name {
+    z-index: 1000;
+}
+
+.intro .name .a {
+    z-index: -1;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+    
+}
+
+.intro .name:hover .a {
+    transform: translate(-12px, 0) rotate(360deg);
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+
+.intro .name .u {
+    transform: translateY(50px);;
+    opacity: 0;
+    transition: .3s all;
+}
+
+.intro .name:hover .u {
+    transform: translateY(12px) rotate(0);
+    opacity: 1;
+    transition: .8s all;
+    transition-delay: .3s;
+}
+
+
+.intro .name .o {
+    transform: translateY(50px);;
+    opacity: 0;
+    /* transition: .5s all; */
+}
+
+.intro .name:hover .o {
+    transform: translateY(12px) rotate(30deg);
+    opacity: 1;
+    transition: .8s all;
+    transition-delay: .5s;
+}
+
+
+.intro .name .g {
+    transform: translateY(50px);;
+    opacity: 0;
+    transition: .5s all;
+    
+}
+
+.intro .name:hover .g {
+    transform: translateY(12px) rotate(30deg);
+    opacity: 1;
+    transition: .5s all;
+    transition-delay: .8s;
+}
+
+
+.intro .name .s {
+    transform: translateY(50px);;
+    opacity: 0;
+    transition: .8s all;
+}
+
+.intro .name:hover .s {
+    transform: translateY(12px);
+    opacity: 1;
+    transition: .5s all;
+    transition-delay: 1s;
+}

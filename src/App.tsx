@@ -1,24 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// import { ScrollTrigger } from "gsap/all";
+import Introduction from "./components/introduction";
+import About from "./components/about";
+import './app.css';
+import { useEffect } from "react";
+import { gsap } from "gsap";
+
+// gsap.registerPlugin(ScrollTrigger)
 
 function App() {
+  useEffect(() => {
+    const cursor = document.querySelector(".cursor");
+    const follower = document.querySelector(".cursor-follower");
+
+    let posX = 0,
+      posY = 0;
+
+    let mouseX = 0,
+      mouseY = 0;
+
+    gsap.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+
+        gsap.set(follower, {
+          css: {
+            left: posX - 12,
+            top: posY - 12
+          }
+        });
+
+        gsap.set(cursor, {
+          css: {
+            left: mouseX,
+            top: mouseY
+          }
+        });
+      }
+    });
+
+    window.addEventListener("mousemove", function (e: MouseEvent) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative">
+      <Introduction />
+      <About />
+
+      <div className="cursor"></div>
+      <div className="cursor-follower"></div>
     </div>
   );
 }
