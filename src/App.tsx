@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import Introduction from "./components/introduction";
-import About from "./components/about";
+import Introduction from "./pages/introduction";
+import About from "./pages/about";
 import Loading from "./components/loading";
 
 import './App.css';
 import PlatformLink from "./components/platformLink";
-import Experience from "./components/experience";
+import Experience from "./pages/experience";
 
 function App() {
   const [isShowLoading, setIsShowLoading] = useState(true);
