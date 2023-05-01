@@ -7,20 +7,24 @@
     transform: translateY(50px);
     opacity: 0;
     transition: 0.3s all;
-    
+    transition-delay: .8s;
+
 }
 
 .intro .name:hover .a {
     transform: translate(-12px, 0) rotate(360deg);
     opacity: 1;
     transition: 0.3s all;
+    transition-delay: .8s;
 }
 
 
 .intro .name .u {
-    transform: translateY(50px);;
+    transform: translateY(50px);
+    ;
     opacity: 0;
     transition: .3s all;
+    transition-delay: .5s;
 }
 
 .intro .name:hover .u {
@@ -32,9 +36,11 @@
 
 
 .intro .name .o {
-    transform: translateY(50px);;
+    transform: translateY(50px);
+    ;
     opacity: 0;
-    /* transition: .5s all; */
+    transition: .5s all;
+    transition-delay: .8s;
 }
 
 .intro .name:hover .o {
@@ -46,10 +52,11 @@
 
 
 .intro .name .g {
-    transform: translateY(50px);;
+    transform: translateY(50px);
+    ;
     opacity: 0;
-    transition: .5s all;
-    
+    transition: .3s all;
+
 }
 
 .intro .name:hover .g {
@@ -61,7 +68,8 @@
 
 
 .intro .name .s {
-    transform: translateY(50px);;
+    transform: translateY(50px);
+    ;
     opacity: 0;
     transition: .8s all;
 }

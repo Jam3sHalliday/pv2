@@ -95,8 +95,8 @@ const G2 = () => (
 
 const Introduction = () => {
     return (
-        <div className={`${styles.intro} min-w-screen min-h-screen flex justify-center items-center flex-col`}>
-            <h1 className={`${styles.name} font-snowman relative text-z128 tracking-wider font-bold select-none`}>
+        <div className={`${styles.intro} page min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
+            <h1 className={`${styles.name} hoverable font-snowman relative text-z128 tracking-wider font-bold select-none`}>
                 T
                 <span className="relative">
                     <span className={`${styles.a} absolute top-1 left-1/2`}>
@@ -132,19 +132,15 @@ const Introduction = () => {
                     g
                 </span>
             </h1>
-            <h2 className="font-snowman text-z32 tracking-wider font-semibold">
-                gamer
+            <h2 className="font-snowman text-z48 tracking-wider font-semibold">
+                programmer
                 &#183;
                 skater
                 &#183;
                 guitarist
                 &#183;
-                developer
+                gamer
             </h2>
-
-            <div>
-                <img src='/assets/imgs/me_and_the_dawg-removebg.png' width={120} />
-            </div>
         </div>
     )
 }
