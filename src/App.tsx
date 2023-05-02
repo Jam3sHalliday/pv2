@@ -10,6 +10,7 @@ import Loading from "./components/loading";
 import './App.css';
 import PlatformLink from "./components/platformLink";
 import Experience from "./pages/experience";
+import Companies from "./pages/companies";
 
 function App() {
   const [isShowLoading, setIsShowLoading] = useState(true);
@@ -93,19 +94,22 @@ function App() {
   // if (isShowLoading) return <Loading />
 
   return (
-    <div className="relative app_container">
-      <div className="cursor-container relative">
-        <div className="cursor"></div>
-        <div className="cursor-follower"></div>
+    <>
+        <div className="cursor-container relative">
+          <div className="cursor"></div>
+          <div className="cursor-follower"></div>
+        </div>
+      <div className="relative app_container">
+
+
+        <Introduction />
+        <About />
+        <Companies />
+        <Experience />
+
+        <PlatformLink />
       </div>
-
-
-      <Introduction />
-      <About />
-      <Experience />
-
-      <PlatformLink />
-    </div>
+    </>
   );
 }
 

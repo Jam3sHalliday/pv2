@@ -10,7 +10,8 @@ module.exports = {
       backgroundImage: {
         intro: 'linear-gradient(180deg, rgba(255, 243, 240, 1) 0%, rgba(224, 251, 252, 1) 100%)',
         about: 'linear-gradient(180deg, rgba(224,251,252,1) 0%, rgba(199,248,249,1) 100%)',
-        experience: 'linear-gradient(180deg, rgba(199,248,249,1) 0%, rgba(224,251,252,1) 100%)',
+        experience: '',
+        companies: 'linear-gradient(180deg, rgba(199,248,249,1) 0%, rgba(224,251,252,1) 100%)',
         meAndTheDawg: 'url(/public/assets/imgs/me_and_the_dawg-removebg.png)',
       },
       fontSize: {

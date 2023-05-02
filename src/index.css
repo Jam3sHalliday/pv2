@@ -29,11 +29,15 @@ body {
   margin: 0;
   box-sizing: border-box;
 
-  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Ubuntu','Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Segoe UI', 'Roboto', 'Oxygen',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-y: visible;
+  position: relative;
+  overflow-x: hidden;
 }
 
 code {
@@ -41,10 +45,22 @@ code {
     monospace;
 }
 
-::-webkit-scrollbar {
-  display: none;
+
+
+a {
+  color: #0E7F81;
 }
 
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  /* display: none; */
+}
+/* 
 .app_container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -53,8 +69,4 @@ code {
 
 .page {
   scroll-snap-align: start;
-}
-
-a {
-  color: #0E7F81;
-}
+} */

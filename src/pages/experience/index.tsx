@@ -1,8 +1,10 @@
+import GlassCard from "../../components/glassCard";
+
 const Experience = () => {
     return (
-        <div className="page bg-experience min-w-screen min-h-screen">
-            EXPERIENCE
-        </div>
+        <div className="page min-w-screen min-h-screen relative">
+            EXPERIENECE
+        </div >
     )
 };
 

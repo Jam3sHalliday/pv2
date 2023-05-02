@@ -35,7 +35,7 @@ const About = () => {
                             <a className="hoverable" href="https://thuocsi.vn/" target="_blank" rel="noreferrer">health-tech startup</a>.
                         </p>
                         <p>
-                            After leaving the last job, I've started my learning journey, spent most of the time to research new knowledge in front and back-end, enroll some courses, and read some books stay
+                            After leaving the last job, I've started my learning journey, spent most of the time to research new knowledge in front and back-end, enroll some courses, read some books, calisthenic and few more things ... yay!
                         </p>
 
                         <p>
