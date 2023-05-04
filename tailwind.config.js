@@ -21,7 +21,7 @@ module.exports = {
         slider: 'linear-gradient(16deg, rgba(71,232,235,1) 0%, rgba(208,227,241,1) 100%)',
         footer: 'linear-gradient(180deg, rgba(255, 243, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)',
         // experience: 'linear-gradient(180deg, rgba(199,248,249,1) 0%, rgba(224,251,252,1) 100%)',
-        meAndTheDawg: 'url(/public/assets/imgs/me_and_the_dawg-removebg.png)',
+        downloadBorder: `${process.env.PUBLIC_URL}/assets/svgs/border.svg`,
         contact: 'linear-gradient(16deg, rgba(208,227,241,1) 0%, rgba(255,255,255,1) 100%)',
       },
       fontSize: {
