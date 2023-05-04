@@ -9,8 +9,9 @@ import Loading from "./components/loading";
 
 import './App.css';
 import PlatformLink from "./components/platformLink";
-import Experience from "./pages/experience";
-import Companies from "./pages/companies";
+import Experience from "./pages/projects";
+import Companies from "./pages/company";
+import Footer from "./pages/footer";
 
 function App() {
   const [isShowLoading, setIsShowLoading] = useState(true);
@@ -106,6 +107,7 @@ function App() {
         <About />
         <Companies />
         <Experience />
+        <Footer />
 
         <PlatformLink />
       </div>

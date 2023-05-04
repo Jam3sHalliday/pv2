@@ -58,8 +58,9 @@ html {
 }
 
 ::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
+
 /* 
 .app_container {
   scroll-snap-type: y mandatory;

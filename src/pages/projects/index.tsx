@@ -2,10 +2,13 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import "./style.css";
+import ProjectIntro from "../../components/projects/intro";
+import BuymedProject from "../../components/projects/buymed";
+import Jopus from "../../components/projects/jopus";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Companies() {
+export default function Experience() {
     const component = useRef<any>(null);
     const slider = useRef<any>(null);
 
@@ -20,7 +23,7 @@ export default function Companies() {
                     trigger: slider.current,
                     pin: true,
                     scrub: 1,
-                    snap: 1 / (panels.length - 1),
+                    // snap: 1 / (panels.length - 1),
                     end: () => "+=" + (slider.current as HTMLElement)?.offsetWidth
                 }
             });
@@ -31,8 +34,9 @@ export default function Companies() {
     return (
         <div className="page" ref={component}>
             <div ref={slider} className="r_container">
-                <div className="panel">ONE</div>
-                <div className="panel">TWO</div>
+                <ProjectIntro />
+                <BuymedProject />
+                <Jopus />
                 <div className="panel">THREE</div>
             </div>
         </div>

@@ -1,0 +1,20 @@
+.article-block {
+    width: 50vw;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 10px 12px -12px rgba(0, 0, 0, 0.4) inset;
+    background: #fff;
+    border-bottom: 1px solid rgba(27, 177, 165, 0.3);
+    position: relative;
+    border-radius: 24px;
+    margin-top: 3rem;
+    padding: 14rem;
+}
+
+.article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.5;
+    padding: 1rem;
+}
