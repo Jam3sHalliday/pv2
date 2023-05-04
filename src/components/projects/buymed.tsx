@@ -59,7 +59,7 @@ export default function BuymedProject() {
 
 
                     <div className="img justify-self-end">
-                        <img src="/assets/imgs/circa_mobile.webp" className="w-3/4" alt="showcase_" />
+                        <img src={`${process.env.PUBLIC_URL}/assets/imgs/circa_mobile.webp`} className="w-3/4" alt="showcase_" />
                     </div>
                 </div>
             </div>

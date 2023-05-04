@@ -22,7 +22,7 @@ export default function Jopus() {
 
                     <div className="img justify-self-end relative">
                         <img
-                            src="/assets/imgs/jopus-laptop.webp"
+                            src={`${process.env.PUBLIC_URL}/assets/imgs/jopus-laptop.webp`}
                             style={{
                                 transform: 'rotate(-90deg)',
                             }}
@@ -35,7 +35,7 @@ export default function Jopus() {
                 <div className="grid grid-cols-2 space-x-12">
                     <div className="img justify-self-start relative w-3/4 px-4 bg-black rounded-2xl flex items-center justify-center">
                         <img
-                            src="/assets/imgs/savemoney-logo.png"
+                            src={`${process.env.PUBLIC_URL}/assets/imgs/savemoney-logo.png`}
                             alt="logo"
                         />
                     </div>
