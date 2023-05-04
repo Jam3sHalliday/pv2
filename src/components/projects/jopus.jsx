@@ -1,6 +1,6 @@
 export default function Jopus() {
     return (
-        <div className="panel bg-project border-gray-300 border-l font-futara">
+        <div className="panel bg-project font-futara">
             <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 space-y-8"
             >

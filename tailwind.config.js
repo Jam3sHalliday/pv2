@@ -19,8 +19,10 @@ module.exports = {
         z: 'linear-gradient(-180deg, rgba(255, 243, 240, 1) 0%, rgba(224, 251, 252, 1) 100%)',
         z2: 'linear-gradient(45deg, rgba(224, 251, 252, 1) 20%, rgba(255, 243, 240, 1) 100%)',
         slider: 'linear-gradient(16deg, rgba(71,232,235,1) 0%, rgba(208,227,241,1) 100%)',
+        footer: 'linear-gradient(180deg, rgba(255, 243, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)',
         // experience: 'linear-gradient(180deg, rgba(199,248,249,1) 0%, rgba(224,251,252,1) 100%)',
         meAndTheDawg: 'url(/public/assets/imgs/me_and_the_dawg-removebg.png)',
+        contact: 'linear-gradient(16deg, rgba(208,227,241,1) 0%, rgba(255,255,255,1) 100%)',
       },
       fontSize: {
         z14: '14px',
