@@ -109,7 +109,7 @@ function App() {
         <Experience />
         <Footer />
 
-        <PlatformLink />
+        {/* <PlatformLink /> */}
       </div>
     </>
   );

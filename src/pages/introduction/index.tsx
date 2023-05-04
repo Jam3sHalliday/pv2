@@ -1,4 +1,7 @@
+import { useLayoutEffect } from 'react';
 import styles from './styles.module.css';
+import { gsap } from 'gsap';
+import { removeElement } from '../../utils';
 
 const A = () => (
     <svg className="w-10 h-10" viewBox="0 0 195 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,54 +97,180 @@ const G2 = () => (
 
 
 const Introduction = () => {
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.set('.imwhat', { opacity: 0, y: -10 })
+            gsap.timeline()
+                .from('.f', { delay: 1, opacity: 0, y: 10 })
+                .to('.f', { opacity: 0, y: -10 })
+
+                .from('.s', { opacity: 0, y: 10 })
+                .to('.s', { opacity: 0, y: -10 })
+
+                .from('.mynameis', { opacity: 0, y: 10 })
+                .to('.mynameis', { opacity: 0, y: -10 })
+
+                .from('.iam', { opacity: 0, y: 10 })
+                .to('.iam', { opacity: 1, y: 0 })
+
+                .from('.ima', { opacity: 0, y: 10 })
+                .to('.ima', { opacity: 1, y: 0 })
+
+                .from('.imwhat_1', { opacity: 0, y: 10 })
+                .to('.imwhat_1', { opacity: 0, y: -10 })
+
+                .from('.imwhat_2', { opacity: 0, y: 10 })
+                .to('.imwhat_2', { opacity: 0, y: -10 })
+
+                .from('.imwhat_3', { opacity: 0, y: 10 })
+                .to('.imwhat_3', { opacity: 0, y: -10 })
+
+                .from('.imwhat_4', { opacity: 0, y: 10 })
+                .to('.imwhat_4', { opacity: 0, y: -10 })
+
+                .to('.imwhat', { opacity: 1, y: 0 })
+
+                // .to('.ima', { opacity: 0, y: 10 })
+                .call(removeElement('.ima'))
+
+                .from('.line', { height: 0 })
+                .to(".line", { height: '12rem', duration: 1 })
+
+                .from('.link_1', { opacity: 0, y: -10 })
+                .to('.link_1', { opacity: 1, translateY: 0 })
+
+                .from('.link_2', { opacity: 0, y: -10 })
+                .to('.link_2', { opacity: 1, translateY: 0 })
+
+                .from('.link_3', { opacity: 0, y: -10 })
+                .to('.link_3', { opacity: 1, translateY: 0 })
+
+                .from('.link_4', { opacity: 0, y: -10 })
+                .to('.link_4', { opacity: 1, translateY: 0 })
+
+                .set('.resume', { opacity: 0, y: -10 })
+                .to('.resume', { opacity: 1, y: 0, delay: 2 })
+        });
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <div className={`${styles.intro} page min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
-            <h1 className={`${styles.name} hoverable font-snowman relative text-z128 tracking-wider font-bold select-none`}>
-                T
-                <span className="relative">
-                    <span className={`${styles.a} absolute top-1 left-1/2`}>
-                        <A />
-                    </span>
-                    a
-                </span>
-                ng Ph
-                <span className="relative">
-                    <span className={`${styles.u} absolute top-1 left-1/2`}>
-                        <U />
-                    </span>
-                    u
-                </span>
-                <span className="relative">
-                    <span className={`${styles.o} absolute top-1 left-1/2`}>
-                        <O />
-                    </span>
-                    <span className={`${styles.s} absolute -top-12 left-1/2`}>
-                        <S />
-                    </span>
-                    o
-                </span>
-                c
-                Quan
-                <span className="relative">
-                    <span className={`${styles.g} absolute bottom-9 -right-8`}>
-                        <G />
-                    </span>
-                    <span className={`${styles.g} absolute top-0 -right-8`}>
-                        <G2 />
-                    </span>
-                    g
-                </span>
-            </h1>
-            <h2 className="font-snowman text-z48 tracking-wider font-semibold">
-                programmer
-                &#183;
-                skater
-                &#183;
-                guitarist
-                &#183;
-                gamer
-            </h2>
-        </div>
+        <>
+            <div className={`${styles.intro} page min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
+                <div className="text-z128 font-snowman relative font-bold">
+                    <p className='f absolute top-0 left-0'>
+                        Hi There!
+                    </p>
+                    <p className='s absolute top-0 left-0'>
+                        welcome!
+                    </p>
+
+                    <p className='mynameis absolute top-0 left-0'>
+                        My name is
+                    </p>
+
+                    <h1 className={`${styles.name} hoverable iam relative tracking-wider font-bold select-none`}>
+                        T
+                        <span className="relative">
+                            <span className={`${styles.a} absolute top-1 left-1/2`}>
+                                <A />
+                            </span>
+                            a
+                        </span>
+                        ng Ph
+                        <span className="relative">
+                            <span className={`${styles.u} absolute top-1 left-1/2`}>
+                                <U />
+                            </span>
+                            u
+                        </span>
+                        <span className="relative">
+                            <span className={`${styles.o} absolute top-1 left-1/2`}>
+                                <O />
+                            </span>
+                            <span className={`${styles.s} absolute -top-12 left-1/2`}>
+                                <S />
+                            </span>
+                            o
+                        </span>
+                        c
+                        Quan
+                        <span className="relative">
+                            <span className={`${styles.g} absolute bottom-9 -right-8`}>
+                                <G />
+                            </span>
+                            <span className={`${styles.g} absolute top-0 -right-8`}>
+                                <G2 />
+                            </span>
+                            g
+                        </span>
+                    </h1>
+                </div>
+
+                <div className='flex items-center font-futara text-z48 tracking-wider font-semibold'>
+                    <div className="flex items-start imaplaceholder">
+                        <p className="ima">I'm a</p>
+                        &nbsp;
+                        <div className='relative'>
+                            <p className="imwhat_1 absolute top-0 left-0">
+                                programmer
+                            </p>
+                            <p className="imwhat_2 absolute top-0 left-0">
+                                skater
+                            </p>
+                            <p className="imwhat_3 absolute top-0 left-0">
+                                guitarist
+                            </p>
+                            <p className="imwhat_4 absolute top-0 left-0">
+                                gamer
+                            </p>
+                        </div>
+                    </div>
+                    <h2 className="imwhat">
+                        programmer
+                        &#183;
+                        skater
+                        &#183;
+                        guitarist
+                        &#183;
+                        gamer
+                    </h2>
+                </div>
+            </div>
+
+            <div className="fixed top-0 left-12 flex flex-col items-center gap-4">
+                <div className="line bg-gray-400 w-[1px]"></div>
+                <div className="gap-8  flex flex-col">
+                    <a className="link_1 hoverable" href="https://github.com/Jam3sHalliday" rel="noreferrer" target="_blank">
+                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/github.svg`} />
+                    </a>
+                    <a className="link_2 hoverable" href="https://www.linkedin.com/in/phuoc-quang/" rel="noreferrer" target="_blank">
+                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/linkedin.svg`} />
+                    </a>
+                    <a className="link_3 hoverable" href="https://leetcode.com/Jam3sHalliday/" rel="noreferrer" target="_blank">
+                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/leetcode.svg`} />
+                    </a>
+                    <a className="link_4 hoverable" href="https://codepen.io/Jam3sHalliday" rel="noreferrer" target="_blank">
+                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/codepen.svg`} />
+                    </a>
+                </div>
+            </div>
+
+
+            <div className="fixed top-4 right-12 font-futara bg-downloadBorder resume ">
+                {/* <Border /> */}
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`${process.env.PUBLIC_URL}/assets/SoftwareEngineer_TangPhuocQuang.pdf`}
+                    className="!text-black"
+                >
+                    Download my resume.
+                </a>
+            </div>
+        </>
     )
 }
 
