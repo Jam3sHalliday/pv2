@@ -21,15 +21,6 @@ export default function ProjectIntro() {
                 opacity: 1,
                 duration: 2,
             });
-
-            gsap.to('.intro_arrow', {
-                scrollTrigger: {
-                    trigger: '.intro_arrow',
-                    toggleActions: 'restart none none none',
-                },
-                opacity: 1,
-                duration: 2,
-            });
         });
 
 

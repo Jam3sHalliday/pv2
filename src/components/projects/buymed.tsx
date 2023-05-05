@@ -1,31 +1,4 @@
-import { gsap } from "gsap";
-import { useLayoutEffect } from "react"
-
 export default function BuymedProject() {
-    useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
-            const title = document.querySelector('.buymed_tittle');
-            const name = document.querySelector('.text-underwhite');
-
-            // gsap.to(name, {
-            //     scrollTrigger: '.text-underwhite',
-            //     x: 320
-            // });
-
-            gsap.to('.buymed_title', {
-                scrollTrigger: {
-                    trigger: '.buymed_title',
-                    start: "top 50%",
-                    end: "+=500",
-                },
-                y: -500,
-                duration: 300
-            });
-        });
-
-        return () => ctx.revert();
-    }, []);
-
     return (
         <div className="panel bg-project buymed font-futara">
             <div
@@ -63,8 +36,6 @@ export default function BuymedProject() {
                     </div>
                 </div>
             </div>
-
-            {/* <img src="/assets/imgs/jopus-laptop.webp" width={'500px'} /> */}
         </div>
     )
 }

@@ -1,23 +1,18 @@
 // import { ScrollTrigger } from "gsap/all";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 import Introduction from "./pages/introduction";
 import About from "./pages/about";
-import Loading from "./components/loading";
 
 import './App.css';
-import PlatformLink from "./components/platformLink";
 import Experience from "./pages/projects";
 import Companies from "./pages/company";
 import Footer from "./pages/footer";
+import WorkingOnIt from "./pages/not-supported";
 
 function App() {
-  const [isShowLoading, setIsShowLoading] = useState(true);
-  const [isTimeoutDone, setIsTimeOutDone] = useState(false);
-
-  const handleShowLoading = () => setIsShowLoading(false)
+  const [isAvailable, setIsAvailable] = useState(true);
 
   const onMouseHover = () => {
     gsap.to('.cursor', { width: '0', height: '0' });
@@ -83,16 +78,12 @@ function App() {
   }, []);
 
   useEffect(() => {
-
-    // document.readyState
+    if (window.innerWidth < 768) {
+      setIsAvailable(false)
+    }
   }, []);
 
-  useEffect(() => {
-    const time = setTimeout(() => setIsTimeOutDone(true), 2000)
-    return () => clearTimeout(time);
-  }, []);
-
-  // if (isShowLoading) return <Loading />
+  if (!isAvailable) return <WorkingOnIt />
 
   return (
     <>

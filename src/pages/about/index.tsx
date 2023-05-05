@@ -7,7 +7,7 @@ const About = () => {
                 className="
                     absolute top-1/2 left-1/2
                     -translate-x-1/2 -translate-y-1/2
-                    2xl:w-1/2 lg:w-3/4 md:w-5/6
+                    2xl:w-1/2 lg:w-3/4 md:w-5/6 spm:w-screen
                 "
             >
                 <div className="relative">
@@ -70,7 +70,7 @@ const About = () => {
                         </div>
 
                         <button
-                            className="font-futara p-2 mt-8"
+                            className="font-futara p-2 mt-8 hoverable"
                             style={{
                                 border: '1px solid #000',
                                 borderRadius: '10% 40% 30% 30%/60% 30% 40% 40%'
