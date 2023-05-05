@@ -58,13 +58,13 @@ const About = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="flex justify-center flex-col">
                         <div
-                            className="flex justify-center items-center overflow-hidden h-80 w-80 md:w-48 md:h-48 about__image--container"
+                            className="flex justify-center items-center overflow-hidden xl:h-80 xl:w-80 md:w-48 md:h-48 about__image--container"
                         >
                             <img
                                 src={`${process.env.PUBLIC_URL}/assets/imgs/me_and_the_dawg_custom.png`}
-                                className="md:w-32"
+                                className="md:w-32 xl:w-5/6"
                                 alt="me and the dawg"
                             />
                         </div>
