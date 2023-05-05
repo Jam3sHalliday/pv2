@@ -12,7 +12,7 @@ export default function Jopus() {
                         </p>
 
                         <ul
-                            className="list-disc columns-2 mt-4 ml-8"
+                            className="list-disc mt-4 ml-8"
                         >
                             <li>HTML</li>
                             <li>SASS</li>

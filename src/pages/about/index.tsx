@@ -14,7 +14,7 @@ const About = () => {
                 <div className="mt-4 flex items-start gap-8">
                     <div className="2xl:text-z20 lg:text-z16 font-futara space-y-4 mt-4 w-3/4">
                         <p >Hi! my name Quang, 2000, a front-end developer, enjoy creating stunning UI and animations</p>
-                        <p>My journey started back in December 2019, when I was a Networking management's freshman at Cao Thang College. My first "IT" experiment was tried to download and install some cracked games, turn out it's kinda fun and interesting copy-paste those .exe and .dll files even though I don't know what it is, then after "accidentally" watched some Youtube videos about web development, html, css and stuff, sound fun so I tried it, "and the rest, is history" xD</p>
+                        <p>My journey started back in December 2019, when I was a Networking management's freshman at Cao Thang College. My first "IT" experiment was tried to download and install some cracked games, turn out it's kinda fun copy-paste those .exe and .dll files even though I don't know what it is, then after "accidentally" watched some Youtube videos about web development, html, css and stuff, sound fun so, it's begin!</p>
                         <p>
                             Fast-forward to today, as a Front-end developer, I’ve had the privilege of working at an
                             &nbsp;
@@ -42,6 +42,7 @@ const About = () => {
                             <li>GSAP</li>
                             <li>Nodejs - Express</li>
                             <li>MongoDB</li>
+                            <li>Micro Front-end</li>
                             <li>...</li>
                         </ul>
                     </div>

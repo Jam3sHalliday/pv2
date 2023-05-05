@@ -1,7 +1,6 @@
 import { useLayoutEffect } from 'react';
 import styles from './styles.module.css';
 import { gsap } from 'gsap';
-import { removeElement } from '../../utils';
 
 const A = () => (
     <svg className="w-10 h-10" viewBox="0 0 195 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +101,12 @@ const Introduction = () => {
         const ctx = gsap.context(() => {
             gsap.set('.imwhat', { opacity: 0, y: -10 })
             gsap.timeline()
+                .from('.intro', { background: '#fff' })
+                .to('.intro', {
+                    backgroundImage: 'linear-gradient(180deg, rgba(255, 243, 240, 1) 0%, rgba(224, 251, 252, 1) 100%)',
+                    duration: 2
+                })
+
                 .from('.f', { delay: 1, opacity: 0, y: 10 })
                 .to('.f', { opacity: 0, y: -10 })
 
@@ -130,12 +135,10 @@ const Introduction = () => {
                 .to('.imwhat_4', { opacity: 0, y: -10 })
 
                 .to('.imwhat', { opacity: 1, y: 0 })
-
-                // .to('.ima', { opacity: 0, y: 10 })
-                .call(removeElement('.ima'))
+                .to('.imaplaceholder', { y: -10, opacity: 0, display: 'none' })
 
                 .from('.line', { height: 0 })
-                .to(".line", { height: '12rem', duration: 1 })
+                .to(".line", { height: '12rem'  })
 
                 .from('.link_1', { opacity: 0, y: -10 })
                 .to('.link_1', { opacity: 1, translateY: 0 })
@@ -149,7 +152,7 @@ const Introduction = () => {
                 .from('.link_4', { opacity: 0, y: -10 })
                 .to('.link_4', { opacity: 1, translateY: 0 })
 
-                .set('.resume', { opacity: 0, y: -10 })
+                .from('.resume', { opacity: 0, y: -10 })
                 .to('.resume', { opacity: 1, y: 0, delay: 2 })
         });
 
@@ -158,17 +161,17 @@ const Introduction = () => {
 
     return (
         <>
-            <div className={`${styles.intro} page min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
+            <div className={`${styles.intro} intro min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
                 <div className="text-z128 font-snowman relative font-bold">
                     <p className='f absolute top-0 left-0'>
-                        Hi There!
+                        hi there!
                     </p>
                     <p className='s absolute top-0 left-0'>
                         welcome!
                     </p>
 
                     <p className='mynameis absolute top-0 left-0'>
-                        My name is
+                        my name is
                     </p>
 
                     <h1 className={`${styles.name} hoverable iam relative tracking-wider font-bold select-none`}>
