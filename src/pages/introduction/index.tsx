@@ -138,7 +138,7 @@ const Introduction = () => {
                 .to('.imaplaceholder', { y: -10, opacity: 0, display: 'none' })
 
                 .from('.line', { height: 0 })
-                .to(".line", { height: '12rem'  })
+                .to(".line", { height: '12rem' })
 
                 .from('.link_1', { opacity: 0, y: -10 })
                 .to('.link_1', { opacity: 1, translateY: 0 })
@@ -162,7 +162,12 @@ const Introduction = () => {
     return (
         <>
             <div className={`${styles.intro} intro min-w-screen min-h-screen flex justify-center items-center flex-col bg-intro`}>
-                <div className="text-z128 font-snowman relative font-bold">
+                <div
+                    className="
+                        xl:text-z128 lg:text-z64 md:text-z48 spm:text-z32
+                        font-snowman relative font-bold
+                    "
+                >
                     <p className='f absolute top-0 left-0'>
                         hi there!
                     </p>
@@ -212,7 +217,7 @@ const Introduction = () => {
                     </h1>
                 </div>
 
-                <div className='flex items-center font-futara text-z48 tracking-wider font-semibold'>
+                <div className='flex items-center font-futara xl:text-z48 lg:text-z32 md:text-z24 spm:text-z18 tracking-wider font-semibold'>
                     <div className="flex items-start imaplaceholder">
                         <p className="ima">I'm a</p>
                         &nbsp;
@@ -243,27 +248,32 @@ const Introduction = () => {
                 </div>
             </div>
 
-            <div className="fixed top-0 left-12 flex flex-col items-center gap-4">
+            <div className="fixed top-0 left-8 lg:left-6 md:left-4 flex flex-col items-center gap-4">
                 <div className="line bg-gray-400 w-[1px]"></div>
-                <div className="gap-8  flex flex-col">
+                <div className="gap-8 md:gap-4 flex flex-col">
                     <a className="link_1 hoverable" href="https://github.com/Jam3sHalliday" rel="noreferrer" target="_blank">
-                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/github.svg`} />
+                        <img className="xl:w-6 lg:w-5 md:w-4 spm:w-3" alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/github.svg`} />
                     </a>
                     <a className="link_2 hoverable" href="https://www.linkedin.com/in/phuoc-quang/" rel="noreferrer" target="_blank">
-                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/linkedin.svg`} />
+                        <img className="xl:w-6 lg:w-5 md:w-4 spm:w-3" alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/linkedin.svg`} />
                     </a>
                     <a className="link_3 hoverable" href="https://leetcode.com/Jam3sHalliday/" rel="noreferrer" target="_blank">
-                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/leetcode.svg`} />
+                        <img className="xl:w-6 lg:w-5 md:w-4 spm:w-3" alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/leetcode.svg`} />
                     </a>
                     <a className="link_4 hoverable" href="https://codepen.io/Jam3sHalliday" rel="noreferrer" target="_blank">
-                        <img alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/codepen.svg`} />
+                        <img className="xl:w-6 lg:w-5 md:w-4 spm:w-3" alt="link icon" src={`${process.env.PUBLIC_URL}/assets/svgs/codepen.svg`} />
                     </a>
                 </div>
             </div>
 
 
-            <div className="fixed top-4 right-12 font-futara bg-downloadBorder resume ">
-                {/* <Border /> */}
+            <button
+                className="fixed top-4 right-12 font-futara resume p-4 hoverable"
+                style={{
+                    border: '1px solid #000',
+                    borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%'
+                }}
+            >
                 <a
                     target="_blank"
                     rel="noreferrer"
@@ -272,7 +282,7 @@ const Introduction = () => {
                 >
                     Download my resume.
                 </a>
-            </div>
+            </button>
         </>
     )
 }

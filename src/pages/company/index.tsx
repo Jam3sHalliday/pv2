@@ -6,8 +6,8 @@ import CompanyTemplate from "../../components/companies/template";
 
 type HTMLLiElementCustom = HTMLLIElement & { index?: number };
 
-const ArrowCurve = () => (
-    <svg className="w-32 h-32" viewBox="0 0 107 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+const ArrowCurve = ({ className }: { className: string }) => (
+    <svg className={className} viewBox="0 0 107 62" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.447937 18.1614C9.81014 31.5352 18.4347 42.3598 31.519 52.0087C40.0175 58.2759 54.5547 65.2946 64.1291 57.0482C74.8617 47.8042 84.2643 34.1413 91.7659 22.1683C95.8416 15.6632 100.326 9.79988 103.994 3.06629C104.777 1.62775 106.117 0.590713 103.454 1.84721C99.6476 3.64332 95.7206 5.00081 91.7126 6.32044C84.0852 8.83174 82.4146 9.9082 92.4987 7.40962C94.8989 6.81489 101.851 3.59526 104.567 4.38527C107.097 5.12145 106.361 12.9525 106.422 14.9305C106.9 30.442 95.1386 15.7417 88.7647 11.1467" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
 )
@@ -126,14 +126,23 @@ const Company = () => {
         <div className="bg-company min-w-screen min-h-screen relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div className="flex space-x-8">
-                    <h2 className="font-snowman 2xl:text-z48 font-semibold inline-block lg:text-z24 -ml-8">Where I've worked</h2>
+                    <h2
+                        className="
+                            font-snowman
+                            2xl:text-z48 lg:text-z32 md:text-z24
+                            font-semibold
+                            inline-block
+                            -ml-8"
+                    >
+                        Where I've worked
+                    </h2>
 
                     <div className="scale-x-[-1] rotate-180 absolute -top-4 right-0">
-                        <ArrowCurve />
+                        <ArrowCurve className="w-32 h-32 md:w-24 md:h-24" />
                     </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8 lg:mt-4 md:mt-2">
                     <div className="">
                         <ul
                             className="
@@ -141,10 +150,10 @@ const Company = () => {
                                 flex flex-row
                                 rounded-full
                                 bg-z
-                                font-futara text-z24
+                                font-futara text-z24 lg:text-z18 md:text-z16
                             "
                         >
-                            <div className="slider absolute top-0 left-0 bg-[#1bb1a5] rounded-[100px] h-full"></div>
+                            <div className="slider absolute top-0 left-0 bg-[#1bb1a5] rounded-full h-full"></div>
                             {
                                 companies.map((name) => (
                                     <li key={name} className="z-50 article-head text-center hoverable py-4 text-[#1bb1a5] p-3 flex-auto">

@@ -17,21 +17,21 @@ export default function CompanyTemplate({
 }: CompanyTemplateProps) {
     return (
         <>
-            <a href={url} target="_blank" rel="noreferrer" className="hoverable text-z24 font-medium">
+            <a href={url} target="_blank" rel="noreferrer" className="hoverable text-z24 lg:text-z18 md:text-z16 font-medium">
                 {name}
             </a>
 
-            <p className="text-z16">
+            <p className="text-z16 md:text-z14">
                 {role}
                 &#183;
                 {time}
             </p>
 
-            <div className="mt-4 text-z16">
+            <div className="mt-4 lg:mt-2 text-z16 md:text-z14">
                 <p>
                     Description
                 </p>
-                <ul className="list-disc ml-6">
+                <ul className="list-disc ml-6 lg:ml-4">
                     {
                         descriptions.map((c, i) => <li key={i}>{c}</li>)
                     }
@@ -39,9 +39,7 @@ export default function CompanyTemplate({
 
                 <p className="mt-4">Technologies:</p>
                 <ul className={`${techs.length > 5 ? 'columns-4' : 'columns-2'} text-z14 list-disc ml-6`}>
-                    {
-                        techs.map(i => <li key={i}>{i}</li>)
-                    }
+                    {techs.map(i => <li key={i}>{i}</li>)}
                 </ul>
             </div>
         </>

@@ -23,6 +23,7 @@
   box-sizing: inherit;
 
   cursor: none;
+  -webkit-cursor: none;
 }
 
 body {

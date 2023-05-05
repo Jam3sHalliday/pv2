@@ -29,13 +29,13 @@ export default function BuymedProject() {
     return (
         <div className="panel bg-project buymed font-futara">
             <div
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 md:5/6"
             >
-                <div className="grid grid-cols-2 space-x-12">
+                <div className="grid grid-cols-2 space-x-12 md:space-x-0">
                     <div className="mt-12">
                         <h3 className="text-z48">Circa</h3>
                         <p>In development</p>
-                        <p className="mt-8 whitespace-normal">
+                        <p className="mt-8 md:mt-4 whitespace-normal">
                             Taking advantage of available resource of
                             &nbsp;
                             <a className="hoverable" href="https://thuocsi.vn/" target="_blank" rel="noreferrer">
@@ -46,7 +46,7 @@ export default function BuymedProject() {
                         </p>
 
                         <ul
-                            className="list-disc columns-2 mt-4 ml-8"
+                            className="list-disc columns-2 mt-4 ml-8 md:ml-4"
                         >
                             <li>nextjs</li>
                             <li>typescript</li>
@@ -58,8 +58,8 @@ export default function BuymedProject() {
                     </div>
 
 
-                    <div className="img justify-self-end">
-                        <img src={`${process.env.PUBLIC_URL}/assets/imgs/circa_mobile.webp`} className="w-3/4" alt="showcase_" />
+                    <div className="img flex justify-center">
+                        <img src={`${process.env.PUBLIC_URL}/assets/imgs/circa_mobile.webp`} className="w-3/4 xl:w-1/2 md:w-full text-center" alt="showcase_" />
                     </div>
                 </div>
             </div>

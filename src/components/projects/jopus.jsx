@@ -6,13 +6,13 @@ export default function Jopus() {
             >
                 <div className="grid grid-cols-2 space-x-12">
                     <div className="mt-12">
-                        <a href="https://connecter.jopus.net/en/" target="_blank" rel="noreferrer" className="hoverable text-z48">Jopus Connector</a>
-                        <p className="mt-4 whitespace-normal indent-4">
+                        <a href="https://connecter.jopus.net/en/" target="_blank" rel="noreferrer" className="hoverable text-z48 lg:text-z32 md:text-z24">Jopus Connector</a>
+                        <p className="mt-4 whitespace-normal indent-4 md:text-z14 lg:text-z16">
                             A recruitment service specialized for foreigners looking for work in Japan.
                         </p>
 
                         <ul
-                            className="list-disc mt-4 ml-8"
+                            className="list-disc mt-4 ml-8 md:text-z14 lg:text-z16 md:ml-4"
                         >
                             <li>HTML</li>
                             <li>SASS</li>
@@ -32,12 +32,15 @@ export default function Jopus() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 space-x-12">
-                    <div className="img justify-self-start relative w-3/4 px-4 bg-black rounded-2xl flex items-center justify-center">
-                        <img
-                            src={`${process.env.PUBLIC_URL}/assets/imgs/savemoney-logo.png`}
-                            alt="logo"
-                        />
+                <div className="grid grid-cols-2 space-x-12 lg:space-x-4">
+                    <div className="img justify-self-start relative flex items-center justify-center">
+                        <div className="bg-black p-4 rounded-xl">
+                            <img
+                                className=""
+                                src={`${process.env.PUBLIC_URL}/assets/imgs/savemoney-logo.png`}
+                                alt="logo"
+                            />
+                        </div>
                     </div>
 
                     <div className="">
@@ -45,7 +48,7 @@ export default function Jopus() {
                             href="https://insurwin.savemoney.vn/?apiKey=9fd08980-fd4b-11ea-b008-91e85a181009&agentId=76&lang=vi"
                             target="_blank"
                             rel="noreferrer"
-                            className="hoverable text-z48"
+                            className="hoverable text-z48 lg:text-z32 md:text-z24"
                         >
                             Insurwin / Insurtech
                         </a>
@@ -55,7 +58,7 @@ export default function Jopus() {
                         </p>
 
                         <ul
-                            className="list-disc columns-2 mt-4 ml-8"
+                            className="list-disc columns-2 mt-4 ml-8 md:ml-4"
                         >
                             <li>reactjs - redux</li>
                             <li>graphql - REST API</li>

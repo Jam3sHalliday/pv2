@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      screens: {
+        spm: '375px',
+      },
       colors: {
         underwhite: 'rgb(238, 238, 238)',
       },
@@ -27,6 +30,7 @@ module.exports = {
       fontSize: {
         z14: '14px',
         z16: '16px',
+        z18: '18px',
         z20: '20px',
         z24: '24px',
         z32: '32px',
