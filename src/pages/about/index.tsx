@@ -63,7 +63,7 @@ const About = () => {
                             className="flex justify-center items-center overflow-hidden xl:h-80 xl:w-80 md:w-48 md:h-48 about__image--container"
                         >
                             <img
-                                src={`${process.env.PUBLIC_URL}/assets/imgs/me_and_the_dawg_custom.png`}
+                                src={`${process.env.PUBLIC_URL}/assets/imgs/me_and_the_dawg-removebg.png`}
                                 className="md:w-32 xl:w-5/6"
                                 alt="me and the dawg"
                             />
