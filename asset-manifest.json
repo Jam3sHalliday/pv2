@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "./static/css/main.1ba81b24.css",
-    "main.js": "./static/js/main.1ba0dd3c.js",
+    "main.js": "./static/js/main.47a7b397.js",
     "static/js/787.f4ce4c64.chunk.js": "./static/js/787.f4ce4c64.chunk.js",
     "static/media/PulpenSnowmanLight.ttf": "./static/media/PulpenSnowmanLight.4ad3cf8724aedbd1d4a9.ttf",
     "static/media/PulpenSnowman.ttf": "./static/media/PulpenSnowman.748698f0a66b9e475369.ttf",
     "static/media/ComicFuturaRegular.otf": "./static/media/ComicFuturaRegular.d004154cc4ad6182c0c5.otf",
     "index.html": "./index.html",
     "main.1ba81b24.css.map": "./static/css/main.1ba81b24.css.map",
-    "main.1ba0dd3c.js.map": "./static/js/main.1ba0dd3c.js.map",
+    "main.47a7b397.js.map": "./static/js/main.47a7b397.js.map",
     "787.f4ce4c64.chunk.js.map": "./static/js/787.f4ce4c64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ba81b24.css",
-    "static/js/main.1ba0dd3c.js"
+    "static/js/main.47a7b397.js"
   ]
 }
