@@ -4,6 +4,11 @@
     /* animation: morph 2s ease infinite; */
 }
 
+.about__image {
+    border: 2px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+
 /* @keyframes morph {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
