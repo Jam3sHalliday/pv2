@@ -277,7 +277,7 @@ const Introduction = () => {
                 <a
                     target="_blank"
                     rel="noreferrer"
-                    href={`${process.env.PUBLIC_URL}/assets/FullstackDeveloper_TangPhuocQuang.pdf`}
+                    href={`${process.env.PUBLIC_URL}/assets/SoftwareEngineer_TangPhuocQuang.pdf`}
                     className="!text-black"
                 >
                     Download my resume.
