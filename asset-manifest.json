@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.940e0283.css",
-    "main.js": "./static/js/main.1ec1e659.js",
+    "main.css": "./static/css/main.3e563250.css",
+    "main.js": "./static/js/main.86af8ddc.js",
     "static/js/787.f4ce4c64.chunk.js": "./static/js/787.f4ce4c64.chunk.js",
     "static/media/PulpenSnowmanLight.ttf": "./static/media/PulpenSnowmanLight.4ad3cf8724aedbd1d4a9.ttf",
     "static/media/PulpenSnowman.ttf": "./static/media/PulpenSnowman.748698f0a66b9e475369.ttf",
     "static/media/ComicFuturaRegular.otf": "./static/media/ComicFuturaRegular.d004154cc4ad6182c0c5.otf",
     "index.html": "./index.html",
-    "main.940e0283.css.map": "./static/css/main.940e0283.css.map",
-    "main.1ec1e659.js.map": "./static/js/main.1ec1e659.js.map",
+    "main.3e563250.css.map": "./static/css/main.3e563250.css.map",
+    "main.86af8ddc.js.map": "./static/js/main.86af8ddc.js.map",
     "787.f4ce4c64.chunk.js.map": "./static/js/787.f4ce4c64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.940e0283.css",
-    "static/js/main.1ec1e659.js"
+    "static/css/main.3e563250.css",
+    "static/js/main.86af8ddc.js"
   ]
 }
